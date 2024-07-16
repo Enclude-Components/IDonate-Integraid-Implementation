@@ -74,7 +74,7 @@
         <inputAssignments>
             <field>FirstName</field>
             <value>
-                <elementReference>Get_IDonate_Donation_Request_Body.donation.donorLname</elementReference>
+                <elementReference>Get_IDonate_Donation_Request_Body.donation.donorFname</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
