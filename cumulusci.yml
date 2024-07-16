@@ -1,0 +1,27 @@
+minimum_cumulusci_version: '3.89.0'
+project:
+    name: IDonate-Integraid-Implementation
+    package:
+        name: IDonate-Integraid-Implementation
+        api_version: '61.0'
+    dependencies:
+        - github: 'https://github.com/EncludeLtd/Integraid'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/IDonate-Integraid-Implementation/tests
+            options:
+                outputdir: robot/IDonate-Integraid-Implementation/results
+
+    robot_testdoc:
+        options:
+            path: robot/IDonate-Integraid-Implementation/tests
+            output: robot/IDonate-Integraid-Implementation/doc/IDonate-Integraid-Implementation_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
