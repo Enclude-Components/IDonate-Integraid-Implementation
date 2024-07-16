@@ -8,7 +8,7 @@
 __pycache__
 
 # Robot Framework results
-robot/IDonate-Integraid-Implementation/results/
+robot/Integraid/results/
 
 # Salesforce cache
 .sf/
@@ -28,6 +28,8 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/test_results.json
+/test_results.xml
 
 # Dependency directories
 node_modules/
@@ -51,3 +53,6 @@ $RECYCLE.BIN/
 .idea
 .project
 .settings
+
+# Anonymous Scripts
+/scripts
